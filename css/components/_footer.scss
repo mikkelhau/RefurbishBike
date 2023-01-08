@@ -1,0 +1,133 @@
+footer {
+  background-color: $darkgray;
+  padding-top: 2%;
+
+  .footer-content {
+    #footer-images {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 1%;
+
+      .side-img {
+        width: 26%;
+        height: auto;
+      }
+
+      .mid-img {
+        width: 39%;
+        height: auto;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+      }
+    }
+
+    #footer-info {
+      padding: 1% 12.5% 1%;
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+
+      ul:first-child {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        transition: 250ms;
+
+        &:hover {
+          background: $lightgray;
+          border-radius: 500px;
+          transition: 250ms;
+          transform: scale(1.1);
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22%;
+
+        a {
+          color: $white;
+          transition: 250ms;
+          font-size: 1.6em;
+          text-align: center;
+
+          &:hover {
+            color: $orange;
+            transition: 250ms;
+          }
+        }
+
+        .img-link {
+          width: 18%;
+          margin-bottom: 4%;
+        }
+
+        p {
+          color: $white;
+          transition: 250ms;
+          font-size: 1em;
+          text-align: center;
+          line-height: 30px;
+
+          &:hover {
+            color: $orange;
+            transition: 250ms;
+          }
+        }
+
+        #address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+
+    #some-footer-icons {
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 1%;
+      width: 10%;
+      margin: 0 auto;
+
+      a {
+        width: 20%;
+      }
+
+      img {
+        width: 100%;
+
+        &:hover {
+          background: $lightgray;
+          border-radius: 500px;
+          transition: 250ms;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1367px) {
+    .footer-content {
+      .info {
+        width: 25% !important;
+        a {
+          font-size: 1.3em !important;
+        }
+      }
+    }
+  }
+}
